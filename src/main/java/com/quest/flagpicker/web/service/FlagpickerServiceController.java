@@ -34,10 +34,11 @@ public class FlagpickerServiceController {
 		return flagPickerService.addContinentAndRelatedCountriesInfo(continent) ? HttpStatus.CREATED : HttpStatus.BAD_REQUEST;
     }
     
-    @RequestMapping(value = "/continent/{name}", method = RequestMethod.GET)
-	public List<Countries> getPersoneByName(@PathVariable String name) {
-		return this.flagPickerService.findByContinentinfo(name);
-	}
+	/*
+	 * @RequestMapping(value = "/continent/{name}", method = RequestMethod.GET)
+	 * public List<Countries> getPersoneByName(@PathVariable String name) { return
+	 * this.flagPickerService.findByContinentinfo(name); }
+	 */
     
     @RequestMapping(value = "/continent/{continent_id}", method = RequestMethod.DELETE)
 	public HttpStatus deleteContinentById(@PathVariable Long continent_id) {

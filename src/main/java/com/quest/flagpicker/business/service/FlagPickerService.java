@@ -33,10 +33,10 @@ public class FlagPickerService {
 		return (List<Continent>)continentRepository.findAll();
     }
 	
-	@Transactional
-	public List<Countries> findByContinentinfo(String continentName) {
-		return countriesRepository.findByContinent(continentName);
-    }
+	/*
+	 * @Transactional public List<Countries> findByContinentinfo(String
+	 * continentName) { return countriesRepository.findByContinent(continentName); }
+	 */
 	
 	@Transactional
 	public boolean addContinentAndRelatedCountriesInfo(Continent continent) {

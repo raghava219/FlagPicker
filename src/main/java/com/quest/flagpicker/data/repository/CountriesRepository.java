@@ -8,6 +8,6 @@ import com.quest.flagpicker.data.entity.Countries;
 
 public interface CountriesRepository extends CrudRepository<Countries, Long>{
 
-	List<Countries> findByContinent(String continent);
+	/* List<Countries> findByContinent(String continent); */
 	
 }
